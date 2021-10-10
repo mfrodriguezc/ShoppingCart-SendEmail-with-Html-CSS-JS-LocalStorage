@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" type="image/png" sizes="32x32" href="insumos/favicon.ico">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+   <title>Menú</title>
+</head>
+<body>
+
+    <header class="titulo">
+
+        <a href="index.html"><img src="insumos/sal&salsa.png" alt="Logo Sal y Salsa"></a>
+        <nav class="navbar navbar-expand-md  bg-dark bar">
+            <a href="Nosotros.html">NOSOTROS</a>
+            <a href="haztupedido.html">EL MENÚ</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="Contacto.html">CONTÁCTANOS</a>
+
+            
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                    <a href="carrito.html"  id="dropdown01" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></a>
+                      <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                          <table id="lista-carrito" class="table">
+                              <thead>
+                                  <tr>
+                                      <th>Imagen</th>
+                                      <th>Nombre</th>
+                                     <!--  <th>Descripcion</th> -->
+                                      <th>Precio</th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody></tbody>
+                          </table>
+
+                          <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                          <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                            Compra</a>
+                        
+                      </div>
+                      
+                  </li>
+              </ul>
+          </div>  
+        </nav>
+    </header>
+
+     <!--REDES SOCIALES-->
+
+    <section>
+        <div class="sticky-container">
+          <ul class="sticky">
+              <li>
+                  <a href="https://www.facebook.com" target="_blank"><img src="insumos/ico-facebook@2x.png" width="25" height="25"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank"><img src="insumos/ico-twitter@2x.png" width="25" height="25"></a>
+            </li>
+            <li>
+              <a href="http://www.youtube.com" target="_blank"><img src="insumos/ico-youtube@2x.png" width="25" height="25"></a>
+          </li>
+      </ul>
+  </div>
+
+  <!--REDES SOCIALES-->
+
+     <!--Encabezado y descarga de Menú-->
+      
+        <div class="container-fluid" style="height: 250px;">
+            <div class="row">
+                <div class="col-sm-10" style="height: 250px;">
+                    <h1 class="display-2" style="color: #79546E">El menú</h1>
+                    <a href="insumos/menu@2x.png" target="blank" download="insumos/menu@2x.png"><button class="btn btn-warning btn-outline-light"><ion-icon name="download-outline"></ion-icon>DESCARGAR EL MENÚ</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Platos del menú-->
+
+
+    <section id="platos-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:#EB5400; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#costilla">
+                    <h2 class="text-center text-white">Costillas Kosher</h2>
+                    <img src="insumos/menu1@2x.png" alt="Costillas Kosher" width="100%" height="58%">
+                    <p class="text-white">Costillas de res asadas en la parrilla con verduras tatemadas.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+
+                <div class="col-sm-4" style="background-color:#440105; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#arroz">
+                    <h2 class="text-center text-white">Arroz Mansaf</h2>
+                    <img src="insumos/menu2@2x.png" alt="Mansaf" width="100%" height="58%">
+                    <p class="text-white"> Arroz cocinado en yogurt con trozos de cordero cocido.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+
+                <div class="col-sm-4" style="background-color:#EB5400; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#haifa">
+                    <h2 class="text-center text-white">Cocido Haifa</h2>
+                    <img src="insumos/menu3@2x.png" alt="Haifa" width="100%" height="58%">
+                    <p class="text-white">Garbanzo con verduras y carne en salsa agridulce.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="platos-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:#440105; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#tentaculo">
+                    <h2 class="text-center text-white">Tentaculo de parrilla</h2>
+                    <img src="insumos/menu4@2x.png" alt="Tentaculo de Parrilla" width="100%" height="58%">
+                    <p class="text-white">Tentaculo de pulpo a la parrilla con pure de papa.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+
+                <div class="col-sm-4" style="background-color:#EB5400; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#brocheta">
+                    <h2 class="text-center text-white">Brochetas Sal&Salsa</h2>
+                    <img src="insumos/foto1@2x.png" alt="Brochetas Sal&Salsa" width="100%" height="58%">
+                    <p class="text-white">Brochetas de verduras y trozos de carne en salsa de la casa.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+
+                <div class="col-sm-4" style="background-color:#440105; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#camaron">
+                    <h2 class="text-center text-white">Camarones BBQ</h2>
+                    <img src="insumos/menu5@2x.png" alt="Camarones BBQ" width="100%" height="58%">
+                    <p class="text-white">Camarones asados en parrila con salsa BBQ de la casa.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="platos-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:#EB5400; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#mejillon">
+                    <h2 class="text-center text-white">Mejillones</h2>
+                    <img src="insumos/Mejillones.jpg" alt="Mejillones" width="100%" height="58%">
+                    <p class="text-white">Mejillones oscuros en salsa de mantequilla y vino.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+
+                <div class="col-sm-4" style="background-color:#440105; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#risotto">
+                    <h2 class="text-center text-white">Risotto de Setas</h2>
+                    <img src="insumos/Risotto de setas.jpg" alt="Risotto de Setas" width="100%" height="58%">
+                    <p class="text-white">Risotto bañado en salsa de setas acompañado de pechuga y camarones.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+
+                <div class="col-sm-4" style="background-color:#EB5400; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#paella">
+                    <h2 class="text-center text-white">Paella Española</h2>
+                    <img src="insumos/Paella.jpg" alt="Paella Española" width="100%" height="58%">
+                    <p class="text-white">Receta tradicional de Paella Española en jugo de limon agridulce.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="platos-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:#440105; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#solomillo">
+                    <h2 class="text-center text-white">Solomillo Agridulce</h2>
+                    <img src="insumos/Solomillo con espárragos.jpg" alt="Solomillo con Esparragos"width="100%" height="58%">
+                    <p class="text-white"> Solomillo dorado a la parrilla acompañado de espárragos y verduras tatemadas.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+
+                <div class="col-sm-4" style="background-color:#EB5400; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#pasta">
+                    <h2 class="text-center text-white">Pasta en Pesto</h2>
+                    <img src="insumos/Pasta pesto.jpg" alt="Pasta en Pesto" width="100%" height="58%">
+                    <p class="text-white">Pasta farfalle bañada en salsa pesto acompañada de tomatillos.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+
+                <div class="col-sm-4" style="background-color:#440105; height: 400px; cursor: pointer;" data-toggle="modal" data-target="#langostino">
+                    <h2 class="text-center text-white">Langostino</h2>
+                    <img src="insumos/Langostino.jpg" alt="Langostino" width="100%" height="58%">
+                    <p class="text-white">Langostino oporto con acompañamiento de salmon y salsas de la casa.</p>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#ventanamodal">
+						Presione para ver más
+					</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Ventanas Modal-->
+
+
+    <!--COSTILLAS-->
+
+    <main class="container">
+
+        <div class="modal fade" id="costilla" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Costillas Kosher</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/menu1@2x.png" alt="Costillas Kosher" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--ARROZ MANSAF-->
+
+    <main class="container">
+
+        <div class="modal fade" id="arroz" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Arroz Mansaf</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/menu2@2x.png" alt="Arroz Mansaf" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!--COCIDO HAIFA-->
+
+
+    <main class="container">
+
+        <div class="modal fade" id="haifa" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Cocido Haifa</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/menu3@2x.png" alt="Cocido Haifa" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!--TENTACULO-->
+
+
+    <main class="container">
+
+        <div class="modal fade" id="tentaculo" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Tentaculo de Parrilla</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/menu4@2x.png" alt="Tentaculo de Parrilla" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--BROCHETAS-->
+
+    <main class="container">
+
+        <div class="modal fade" id="brocheta" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Brochetas Sal&Salsa</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/foto1@2x.png" alt="Brochetas Sal&Salsa" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--CAMARONES-->
+
+    <main class="container">
+
+        <div class="modal fade" id="camaron" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Camarones BBQ</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/menu5@2x.png" alt="Camarones BBQ" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--MEJILLONES-->
+
+    <main class="container">
+
+        <div class="modal fade" id="mejillon" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Mejillones</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/Mejillones.jpg" alt="Mejillones" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--RISOTTO-->
+
+    <main class="container">
+
+        <div class="modal fade" id="risotto" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Risotto de Setas</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/Risotto de setas.jpg" alt="Risotto de Setas" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--PAELLA-->
+
+    <main class="container">
+
+        <div class="modal fade" id="paella" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Paella Española</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/Paella.jpg" alt="Paella Española" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--SOLOMILLO-->
+
+    <main class="container">
+
+        <div class="modal fade" id="solomillo" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Solomillo Agridulce</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/Solomillo con espárragos.jpg" alt="Solomillo Agridulce" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--PASTA-->
+
+    <main class="container">
+
+        <div class="modal fade" id="pasta" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Pasta en Pesto</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/Pasta pesto.jpg" alt="Pasta en Pesto" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--LANGOSTINO-->
+
+    <main class="container">
+
+        <div class="modal fade" id="langostino" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2>Langostino</h2>
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <img src="insumos/Langostino.jpg" alt="Langostino" class="img-fluid">
+                        </div>
+
+                        <p>Costillas de res asadas en la parrilla con una salsa semidulce, acompañada de verduras (tomate, zanahoria, zukini,) tatemados y servidos sobre una cama de arroz de coco.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+							¿Preguntas? Contáctenos
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+                    <!--BOTONES ANTERIOR - SIGUIENTE -->
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="height: 150px;">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2 align-self-center">
+                    <a href="#" style="color: black; font-size: 18px;  float: right;"><ion-icon name="arrow-back-outline" style="color: #C100D8;"></ion-icon><strong>ANTERIOR</strong></a>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2 align-self-center">
+                    <a href="#" style="color: black; font-size: 18px;"><strong>SIGUIENTE</strong><ion-icon name="arrow-forward-outline" style="color: #C100D8;"></ion-icon></a>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+<!--FOOTER-->
+
+
+<footer>
+     <br><br>
+    <div class="row" align="center">
+        <div class="col-md-3">
+   <a href="index.html"> <img src="insumos/logo@2x.png" alt="logo" width="80%" height="80%" class="logo"></a>
+        </div>
+        <div class="col-md-6">
+    <div class="info" id="textosBlanco" align="left" >
+        <nav>
+            <div class="row">
+            <div class="col-md-4" ><a id="textosBlanco" href="MapaSitio.html">MAPA DEL SITIO</a></div>
+            <div class="col-md-4" ><a id="textosBlanco" href="Contacto.html">CONTÁCTANOS</a></div>
+            <div class="col-md-4" ><a id="textosBlanco" href="Contacto.html">RESERVAS</a></div>
+            </div>
+        </nav>
+        <br>
+        
+        <p>Restaurante sal y salsa Ltda</p>
+        <p>Calle 19 No. 7-30.Bogotá</p>
+        <p>reservas@salysalsa.com</p>
+        <p>312 325 25 321</p>
+        <br>
+        <p>© Copyright 2020.</p>
+    </div>
+        </div>
+     <div class="col-md-3" align="left">   
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9342643317805!2d-74.07400248705444!3d4.605791896654018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1ses-419!2sco!4v1631466195287!5m2!1ses-419!2sco" width="95%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+    </div>
+     <br><br>
+      </footer> 
+
+<!--FOOTER-->
+
+</body>
+
+</html>

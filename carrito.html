@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+    <title>Carrito de Compras </title>
+
+</head>
+
+<body>
+    <header class="titulo">
+
+        <a href="index.html"><img src="insumos/sal&salsa.png" alt="Logo Sal y Salsa"></a>
+        <nav class="navbar navbar-expand-md  bg-dark bar">
+            <a href="Nosotros.html">NOSOTROS</a>
+            <a href="haztupedido.html">EL MENÚ</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="Contacto.html">CONTÁCTANOS</a>
+
+            
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">    
+                    <a href="carrito.html"  id="dropdown01" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></a>
+          </div>  
+        </nav>
+    </header>
+
+    <!--REDES SOCIALES-->
+
+    <section>
+        <div class="sticky-container">
+            <ul class="sticky">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank"><img src="insumos/ico-facebook@2x.png" width="25"
+                            height="25"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank"><img src="insumos/ico-twitter@2x.png" width="25"
+                            height="25"></a>
+                </li>
+                <li>
+                    <a href="http://www.youtube.com" target="_blank"><img src="insumos/ico-youtube@2x.png" width="25"
+                            height="25"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+        <!--REDES SOCIALES-->
+
+    <br>
+
+    <main>
+        <div class="container">
+            <section>
+                <h1 class="display-5" style="height: 250px; padding-top:70px;"><strong>Carrito de Compra</strong></h1>
+            </section>
+            <div class="row">
+                <div class="col-md-8">   
+                        <div id="carrito" class="form-group table-responsive" >
+                            <table class="form-group table" id="lista-compra" >
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody >
+
+                                </tbody>
+                            </table>
+
+                            
+                            </div>
+                            <div align="center">
+                            <div class="col-md-4 mb-2" >
+                                <a href="haztupedido.html"  class="btn btn-danger btn-block">Seguir comprando</a>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="d-flex justify-content-center mb-3">Total: </h2>
+                            <div id="carrito" class="form-group table-responsive" >
+                                <table class="form-group table" id="lista-compra" >
+                                <tr style="display:none">
+                                    <th colspan="4" scope="col" class="text-right"></th>
+                                    <th scope="col">
+                                        <p id="subtotal"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+                                <tr style="display:none">
+                                    <th colspan="4" scope="col" class="text-right"></th>
+                                    <th scope="col">
+                                        <p id="igv"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">TOTAL: </th>
+                                    <th scope="col">
+                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+
+                            </table>
+                            <div  align="center">
+                                <div class="col-xs-12 col-md-4">
+                                    <button class="btn btn-warning btn-outline-light" data-toggle="modal" data-target="#formularioc"><ion-icon name="cart"></ion-icon>FINALIZAR COMPRA</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="container">
+        
+    
+        <div class="modal fade" id="formularioc" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="width: 100%;">
+    
+                    <div class="col-sm">
+                        <h1 id="cont" class="text-center">Finalizar Compra</h1>
+                    </div>
+    
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" aria-label="cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+    
+                    </div>
+                        
+                    <div class="modal-body">
+                        <div class="alert alert-success">
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                                    <form id="procesar-pago">
+                                        <div class="form-group row">
+                                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente:</label>
+                                            <div class="col-12 col-md-10">
+                                                <input type="text" class="form-control" id="cliente"
+                                                    placeholder="Ingresa nombre cliente" name="destinatario">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo:</label>
+                                            <div class="col-12 col-md-10">
+                                                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center" id="loaders">
+                                            <img id="cargando" src="insumos/cargando.gif" alt="cargando" width="220">
+                                        </div>
+                
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-4 mb-2">
+                                                <a href="haztupedido.html" class="btn btn-success btn-block">Seguir comprando</a>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4">
+                                                <button type="submit" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                                            </div>
+                                        </div>                                       
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    
+    
+                 </div>
+            </div>
+        </div><!-- aqui finaliza el modal -->
+                        
+    </main>
+
+
+
+
+
+
+ <!--FOOTER-->
+
+
+ <footer>
+    <br><br>
+   <div class="row" align="center">
+       <div class="col-md-3">
+  <a href="index.html"> <img src="insumos/logo@2x.png" alt="logo" width="80%" height="80%" class="logo"></a>
+       </div>
+       <div class="col-md-6">
+   <div class="info" id="textosBlanco" align="left" >
+       <nav>
+           <div class="row">
+           <div class="col-md-4" ><a id="textosBlanco" href="MapaSitio.html">MAPA DEL SITIO</a></div>
+           <div class="col-md-4" ><a id="textosBlanco" href="Contacto.html">CONTÁCTANOS</a></div>
+           <div class="col-md-4" ><a id="textosBlanco" href="Contacto.html">RESERVAS</a></div>
+           </div>
+       </nav>
+       <br>
+       <p>Restaurante sal y salsa Ltda</p>
+       <p>Calle 19 No. 7-30.Bogotá</p>
+       <p>reservas@salysalsa.com</p>
+       <p>312 325 25 321</p>
+       <br>
+       <p>© Copyright 2020.</p>
+   </div>
+       </div>
+    <div class="col-md-3"  align="left">   
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9342643317805!2d-74.07400248705444!3d4.605791896654018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1ses-419!2sco!4v1631466195287!5m2!1ses-419!2sco" width="95%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+   </div>
+    <br><br>
+     </footer> 
+
+<!--FOOTER-->
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+
+    <script src="js/carrito.js"></script>
+    <script src="js/compra.js"></script>
+
+
+
+</body>
+
+</html>

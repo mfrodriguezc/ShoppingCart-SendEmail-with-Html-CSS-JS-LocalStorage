@@ -1,0 +1,369 @@
+
+/*NAVBAR*/
+
+.titulo{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    background:rgba(57, 61, 63, 0.993);
+    color:#ffff;
+    padding:10px;
+}
+.titulo .bar a{
+    font-size:11px;
+    margin:0 15px;
+    text-decoration:none;
+    color:#ffff;
+}
+
+/*NAVBAR*/
+.borrar-producto{
+    color: yellow !important; 
+    background:red !important;
+}
+
+
+/*SOCIAL-MEDIA*/
+
+
+.sticky-container{
+    position:fixed;
+    right:-120px;
+    top:150px;
+    width:170px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:orange;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:6px 10px;
+}
+.sticky li p{
+    margin:0px;
+}
+
+/*SOCIAL-MEDIA*/
+
+
+ion-icon{ padding: 0px 6px; font-size: 20px;}
+
+
+/*VENTANAS MODAL*/
+#cargando{
+    display:none;
+}
+
+.col-sm-10 a { 
+	float: right;
+ 	display: inline-block;
+ 	margin-top: 120px;
+}
+.col-sm-10 h1{
+	display: inline-block;
+	margin-top: 90px;
+}
+
+#platos-1 button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#platos-2 button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#platos-3 button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#platos-4 button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*VENTANAS MODAL*/
+
+#ms{
+	color: #79546E;
+}
+
+#link a{
+	text-decoration: none;
+	color: #79546E;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #3F1106;
+    color: white;
+}
+
+footer a {
+	color:white;
+}
+
+
+footer .map{
+    overflow:hidden;
+}
+
+/*FOOTER*/
+
+
+/*MEDIAQUERY*/
+
+/* @media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { ... }
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) { ... } */
+
+/*MEDIAQUERY*/
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+h1{
+    margin-top:10px;
+    font-size: 60px;
+    /* color:#3F1106; */
+}
+@media(min-width:768px){
+.titulo{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    background:rgba(57, 61, 63, 0.993);
+    color:#ffff;
+    padding:10px;
+}}
+.titulo{
+    background:rgba(57, 61, 63, 0.993);
+    color:#ffff;
+    padding:10px;
+}
+.titulo h2{
+    font-size:32px;
+}
+.titulo .bar a{
+    font-size:13px;
+    margin:0 15px;
+    text-decoration:none;
+    color:#ffff;
+}
+.titulo .bar a{
+    font-size:13px;
+    margin:0 15px;
+    text-decoration:none;
+    color:#ffff;
+}
+.section{
+    display: grid;
+    grid-template-columns:50% 50%;
+    margin:40px 4px;
+}
+@media (max-width:768px){.section{
+    display:block;
+}}
+@media (max-width:768px){.section .seccion1{
+    display: grid;
+    grid-template-columns:40% 60%;
+    margin:10px 0;
+}
+.img{
+    width:300px;
+    height:400px;
+    }}
+@media (min-width:768px){.section .seccion1{
+    display: grid;
+    grid-template-columns:50% 50%;
+    margin:10px 10px;
+}
+.img{
+width:300px;
+height:400px;
+}}
+.articulo1{
+    background:#435;
+    padding:13px;
+    height:400px;
+}
+
+.seccion1 .articulo1 .p{
+color:#fff;
+background:orangered;
+border-radius:4px;
+font-size:10px;
+padding:10px;
+align-items: center;
+}
+
+.sticky-container{
+    position:fixed;
+    right:-120px;
+    top:150px;
+    width:170px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:orange;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:6px 10px;
+}
+.sticky li p{
+    margin:0px;
+}
+footer{
+    background-color: #3F1106;
+    color: white;
+    overflow: hidden;
+    max-height: 320px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 15px 0 0;
+}
+
+footer .row1 .col-md-4 a {
+    color:white;
+    text-decoration: none;
+    display:inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+footer .map{
+    overflow:hidden;
+    margin: auto;
+}
+footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section #uno button:hover{
+    background-color: #440105;
+    color: #eb8d00; 
+}
+section #dos button:hover{
+    background-color: #440105;
+    color: #eb8d00; 
+}
+section #tres button:hover{
+    background-color: #440105;
+    color: #eb8d00; 
+}
+section #cuatro button:hover{
+    background-color: #440105;
+    color: #eb8d00; 
+}
+section #cinco button:hover{
+    background-color: #440105;
+    color: #eb8d00; 
+}
+section #seis button:hover{
+    background-color: #440105;
+    color: #eb8d00; 
+}
+.not-active{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+section #uno 
+
+/*PRODUCT COUNTER*/
+
+.counter-inner{
+    border: 1px solid blue;
+	width: 260px;
+	margin: 0 auto;
+	background-color:#fff;
+	margin-top:10px;
+	border-radius: 35px;
+}
+.counter-inner input{
+	width: 60px;
+	height:35px;
+	margin: 30px 25px;
+	box-shadow: 5px 5px 10px grey;
+	border: 3px solid transparent;
+	outline: none;
+	text-align: center;
+	font-size:20px;
+}
+.counter-inner input:hover{
+	box-shadow: 5px 5px 10px grey;
+	background-color:#440105;
+	color: #fff;
+	border: 3px solid #fff;
+	outline: none;
+}
+.counter-inner input::placeholder{
+	color: #000;
+}
+.counter-inner .btn{
+	width: 40px;
+	height: 40px;
+	background-color:#eb8d00;
+	color: #fff;
+	border: 3px solid #fff;
+	outline:none;
+	box-shadow: 5px 5px 10px grey;
+	font-size:20px;
+	text-align: center;
+}
+.counter-inner .btn:hover{
+	background-color: #440105;
+	color: #fff;
+}
+#cont{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    color: rgb(168, 17, 17);
+}
+#bcont{
+    margin-bottom: 60px;
+}
+.form{
+    margin-top: 10px;
+}
+

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+    <title>Reserva </title>
+
+</head>
+
+<body>
+    <header class="titulo">
+
+        <a href="index.html"><img src="insumos/sal&salsa.png" alt="Logo Sal y Salsa"></a>
+        <nav class="navbar navbar-expand-md  bg-dark bar">
+            <a href="Nosotros.html">NOSOTROS</a>
+            <a href="haztupedido.html">EL MENÚ</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="Contacto.html">CONTÁCTANOS</a>
+
+            
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">    
+                    <a href="carrito.html"  id="dropdown01" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></a>
+          </div>  
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="col">
+
+            <div class="col-sm">
+                <h1 id="cont">Check Out</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <p>Ya sólo queda un último paso</p>
+                    <p>Por favor llena la información correspondiente y confirma tu compra para que el envío se realice
+                        con exito</p>
+                </div>
+                <div class="col-sm">
+
+                    <div class="container" id="bcont">
+
+                        <form id="pedir-servicio">
+
+                            <div class="form-group row">
+                                <input type="text" class="form-control" name="nombre" id="nombre"
+                                    placeholder="Nombre Completo" pattern="[a-zA-z]+" maxlength="50" minlength="3"
+                                    required>
+                            </div>
+
+                            <div class="form-group row">
+                                <input type="email" class="form-control" id="email" name="cc_to"
+                                    placeholder="Correo electrónico" maxlength="50" required>
+                            </div>
+
+                            <div class="form-group row">
+                                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono"
+                                    maxlength="10" required>
+                            </div>
+
+                            <div class="form-group row">
+                                <select class="form-control" name="servicio" id="opcion" required>
+                                    <option>Seleccione el servicio</option>
+                                    <option>Aniversario</option>
+                                    <option>Cena c onAmigos</option>
+                                    <option>Celebración de Cumpleaños</option>
+                                    <option>Declaraciones o Propuestas</option>
+                                    <option>Despedidas</option>
+                                    <option>Fiestas Infantiles</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group row">
+                                <input type="text" class="form-control" id="npersonas" name="npersonas" placeholder="Número de personas"
+                                    maxlength="5" required>
+                            </div>
+
+                            <div class="form-group row">
+                                <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Seleccione una fecha"
+                                    maxlength="" required>
+                            </div>
+
+                            <div class="form-group row">
+                                <select class="form-control" name="hora" id="hora" required>
+                                    <option>Hora</option>
+                                    <option>11:00 a.m</option>
+                                    <option>12:00 p.m</option>
+                                    <option>1:00 p.m</option>
+                                    <option>2:00 p.m</option>
+                                    <option>3:00 p.m</option>
+                                    <option>4:00 p.m</option>
+                                    <option>5:00 p.m</option>
+                                    <option>6:00 p.m</option>
+                                    <option>7:00 p.m</option>
+                                    <option>8:00 p.m</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group row">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="mensaje"
+                                    aria-describedby="peticion" placeholder="Indicaciones especiales" rows="6"
+                                    ></textarea>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" required=""> Acepto Términos y condiciones
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center" id="loaders">
+                                <img id="cargando" src="insumos/cargando.gif" alt="cargando" width="220">
+                            </div>
+
+                            <div class="row justify-content-between">
+                                <div class="col-xs-12 col-md-4">
+                                    <button type="submit" class="btn btn-success btn-block"
+                                        id="procesar-reserva">Realizar Reserva</button>
+                                </div>
+                            </div>
+
+                        </form>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <a href="https://www.facebook.com" target="_blank"><img src="insumos/ico-facebook@2x.png" width="25"
+                        height="25"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank"><img src="insumos/ico-twitter@2x.png" width="25"
+                        height="25"></a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com" target="_blank"><img src="insumos/ico-youtube@2x.png" width="25"
+                        height="25"></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <footer>
+        <a href="#"> <img src="insumos/logo@2x.png" alt="logo" width="120" height="120" class="logo"></a>
+        <div class="info">
+            <nav>
+                <a href="#">MAPA DEL SITIO</a>
+                <a href="#">CONTÁCTANOS</a>
+                <a href="#">RESERVAS</a>
+            </nav>
+            <br><br>
+            <p>Restaurante sal y salsa Ltda</p>
+            <p>Calle 19 No. 7-30.Bogotá</p>
+            <p>reservas@salysalsa.com</p>
+            <p>312 325 25 321</p>
+            <br>
+            <p>© Copyright 2020.</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9342643317805!2d-74.07400248705444!3d4.605791896654018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1ses-419!2sco!4v1631466195287!5m2!1ses-419!2sco"
+            width="275" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    
+    <script>
+        
+        const procesarReservaBtn = document.getElementById('procesar-reserva');
+
+        const nombre = document.getElementById('nombre');
+        const email = document.getElementById('email');
+
+        cargarEventos();
+
+        function cargarEventos() {          
+            //cuando se selecciona procesar Reserva
+            procesarReservaBtn.addEventListener('click', procesarReserva);
+        }
+
+        function procesarReserva() {
+            // e.preventDefault();
+
+            if (nombre.value === '' || email.value === '') {
+                Swal.fire({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Ingrese todos los campos requeridos',
+                    showConfirmButton: false,
+                    timer: 2000
+                })
+            }
+            else {
+
+                emailjs.init('user_Z9pPFcm5vpPXu2RWMEFby')
+
+
+
+
+                document.getElementById('pedir-servicio')
+                    .addEventListener('submit', function (event) {
+                        event.preventDefault();
+
+
+
+
+
+                        const cargandoGif = document.querySelector('#cargando');
+                        cargandoGif.style.display = 'block';
+
+                        const enviado = document.createElement('img');
+                        enviado.src = 'insumos/mail.gif';
+                        enviado.style.display = 'block';
+                        enviado.width = '150';
+
+                        const serviceID = 'default_service';
+                        const templateID = 'template_o1j6o4h';
+
+
+                        emailjs.sendForm(serviceID, templateID, this)
+                            .then(() => {
+                                cargandoGif.style.display = 'none';
+                                document.querySelector('#loaders').appendChild(enviado);
+
+                                setTimeout(() => {
+                                    enviado.remove();
+                                    window.location = "index.html";
+                                }, 3000);
+
+
+                            }, (err) => {
+                                cargandoGif.style.display = 'none';
+                                alert("Error al enviar el email\r\n Response:\n " + JSON.stringify(err));
+                            });
+                    });
+
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Restaurante Sal&Salsa / Inicio </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--<link href="css/estilos.css" rel="stylesheet">-->
+  <link rel="icon" type="image/png" sizes="32x32" href="insumos/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+  <style>
+.carrusel1 {
+   
+    top: 0;
+    background-repeat: no repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: url("insumos/foto1@2x.png");
+  }
+  .carrusel2 {
+   
+    top: 0;
+    background-repeat: no repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+.imagen2 {
+    background-image: url("insumos/foto2@2x.png");
+    background-repeat: no repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+    
+.imagen3 {
+    background-image: url("insumos/foto3@2x.png");
+    background-repeat: no repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+  
+#textosBlanco{
+    color: #fff;
+    text-decoration: none;
+}
+
+      
+footer{
+    background-color: #3F1106;
+}
+
+
+footer .map{
+    overflow:hidden;
+}
+
+.exaltan{
+    background-color: red;
+}
+#recCafe{
+    color: brown;
+}
+#recoCafe{
+    background-color: brown;
+}
+.btn-danger{
+    background-color: orangered;
+    color: white;
+}
+*{
+    padding: 0;
+    margin:0;
+}
+.titulo{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: none !important;
+    background-color: black;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    background:rgba(57, 61, 63, 0.993);
+    color:White;
+    padding:10px;
+}
+.titulo .bar a{
+    font-size:11px;
+    margin:0 15px;
+    text-decoration:none;
+    color:White;
+}
+.sticky-container{
+    position:fixed;
+    right:-120px;
+    top:150px;
+    width:170px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:orange;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:6px 10px;
+}
+.sticky li p{
+    margin:0px;
+}
+blockquote {
+border:none;
+font-family:Georgia, "Times New Roman", Times, serif;
+    margin: 0 auto; 
+    padding-left: 0.4em; 
+}
+
+blockquote h3 {
+    font-size:21px;
+}
+
+blockquote h3:before { 
+    content: "\201C";
+    font-weight: bold;
+    font-size:100px;
+    color:#DCDBDB;
+    position: absolute; 
+    top: -0.2em;
+    left: -0.3em; 
+    font-family: 'Georgia'; 
+} 
+blockquote h3:after { 
+    content: "\201D";
+    font-weight: bold;
+    font-size:100px;
+    color:#DCDBDB;
+    position: absolute; 
+    bottom: -0.1em;
+    right: 0; 
+    font-family: 'Georgia'; 
+}
+
+</style>
+  
+</head>
+<body>
+
+    <header class="titulo">
+
+        <a href="index.html"><img src="insumos/sal&salsa.png" alt="Logo Sal y Salsa"></a>
+        <nav class="navbar navbar-expand-md  bg-dark bar">
+            <a href="Nosotros.html">NOSOTROS</a>
+            <a href="haztupedido.html">EL MENÚ</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="Contacto.html">CONTÁCTANOS</a>
+
+            
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                    <a href="carrito.html"  id="dropdown01" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></a>
+                      <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                          <table id="lista-carrito" class="table">
+                              <thead>
+                                  <tr>
+                                      <th>Imagen</th>
+                                      <th>Nombre</th>
+                                     <!--  <th>Descripcion</th> -->
+                                      <th>Precio</th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody></tbody>
+                          </table>
+
+                          <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                          <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                            Compra</a>
+                        
+                      </div>
+                      
+                  </li>
+              </ul>
+          </div>  
+        </nav>
+    </header>
+    
+  
+    
+<div class="container-fluid">    
+    
+     <div class="sticky-container">
+          <ul class="sticky">
+              <li>
+                  <a href="https://www.facebook.com" target="_blank"><img src="insumos/ico-facebook@2x.png" width="25" height="25"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank"><img src="insumos/ico-twitter@2x.png" width="25" height="25"></a>
+              </li>
+              <li>
+                  <a href="http://www.youtube.com" target="_blank"><img src="insumos/ico-youtube@2x.png" width="25" height="25"></a>
+              </li>
+          </ul>
+      </div>
+<div class="seccion1">    
+<div class="row"> 
+<div class="col-md-12">    
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  
+  <!-- The slideshow -->
+  <div class="carrusel1">
+  <div class="carousel-inner">
+      <br><br><br>
+    <div class="carousel-item active" align="center">
+         <img src="insumos/logo@2x.png" alt="Restaurant_Imagen1" width="320" height="280" >
+         <br><br><br><h1 class="display-4" id="textosBlanco"><strong>Sabores que <kbd class="exaltan">exaltan</kbd> tus sentidos</strong></h1>
+    </div>
+    <div class="carousel-item" align="center">
+        <img src="insumos/logo@2x.png" alt="Restaurant_Imagen1" width="320" height="280" >
+         <br><br><br><h1 class="display-4" id="textosBlanco"><strong><kbd class="exaltan">Sabores que exaltan tus sentidos</kbd></strong></h1>
+    </div>
+    <div class="carousel-item" align="center"> 
+        <img src="insumos/logo@2x.png" alt="Restaurant_Imagen1" width="320" height="280" >
+         <br><br><br><h1 class="display-4" id="textosBlanco"><strong>Sabores que exaltan tus sentidos</strong></h1>
+    </div>
+  </div>
+</div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div> </div></div></div>
+
+    
+<div class="imagen2" align="center">
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div >
+            <br> </br>
+            <br> </br>
+            <br> </br>
+            <a name="NuestraPropuesta"></a>
+            <h1 class="display-4" id="textosBlanco"> <strong>Nuestra Propuesta &nbsp;</strong></h1>
+                 
+            <br> </br>
+     
+              <p  id="textosBlanco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor. Donec vestibulum sollicitudin justo nec ullamcorper. Curabitur egestas 
+                  dignissim libero, eu aliquam enim malesuada ut.Aenean sollicitudin pretium sapien 
+                  in tincidunt.  Vivamus posuere eros ullamcorper lorem facilisis, non vestibulum
+                  felis porttitor. Donec sit amet enim at turpis varius pellentesque ut a metus.</p>
+            
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+</div>
+    
+<div class="row">
+    <div class="col-md-8"></div><br><br>
+    <a name="RecomendadoChef"></a>
+    <h1 class="display-4" id="recCafe"> <strong> &nbsp;&nbsp;&nbsp;&nbsp;
+            Los recomendados del chef </strong> </h1> <br>
+    <div class="col-md-4">
+        
+        
+    </div>
+</div>
+<div class="seccion3">    
+<div class="row" align="center">
+    <div class="col-md-6" >
+      
+        <div class="row">
+            <div class="col-md-2"></div>
+            
+            <div class="col-md-5" > 
+                    <img class="recomendado" src="insumos/marron.jpeg" alt="comida" width="210" height="210" style="margin: 0px 10px 10px 10px;float: right;">
+            </div> 
+            <div class="col-md-5" >
+                <img class="recomendado" src="insumos/marron.jpeg" alt="comida" width="210" height="210" style="margin: 0px 10px 10px 10px;float: left;">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5"  >
+                <img class="recomendado" src="insumos/marron.jpeg" alt="comida" width="210" height="210" style="margin: 0px 10px 10px 10px;float: right;">
+            </div>
+            <div class="col-md-5"  >
+                <img class="recomendado" src="insumos/marron.jpeg" alt="comida" width="210" height="210" style="margin: 0px 10px 10px 10px;float: left;">
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5" align="center">
+        <img src="insumos/menu@2x.png" alt="Menu" width="300" height="420" ><br></br>
+        <a href="Menú.html"><button type="button" class="btn btn-danger">Consultar Menu</button></a>
+        <br></br>
+
+        
+    </div>
+</div></div>
+    
+<div class="imagen3">
+    <br><br>
+   <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-11">
+        <a name="OrganizamosEvento"></a>
+        <h1 class="display-4" id="textosBlanco"> <strong>Organizamos tu evento</strong></h1> <br>
+    </div>
+   </div>
+    
+    <div class="row" align="center">
+        
+        <div class="col-md-3" id="textosBlanco">
+            <img src="insumos/icono1@2x.png" alt="Restaurant_Imagen1" width="140" height="140">
+            <h3>Fiestas Tematicas</h3>
+            <p align="center" id="textosBlanco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor. Donec sit amet enim at turpis varius pellentesque ut a metus.</p>
+            <a href="servicios.html#Cena"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+</svg></a>
+        </div>
+        <div class="col-md-3" id="textosBlanco">
+            <img src="insumos/icono2@2x.png" alt="Restaurant_Imagen1" width="140" height="140">
+            <h3>Matrimonios</h3>
+            <p align="center" id="textosBlanco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor. Donec sit amet enim at turpis varius pellentesque ut a metus.</p>
+             <a href="servicios.html#Declaracion"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+</svg></a>
+        </div>
+        <div class="col-md-3" id="textosBlanco">
+            <img src="insumos/icono3@2x.png" alt="Restaurant_Imagen1" width="140" height="140">
+            <h3>Cenas Empresariales</h3>
+            <p align="center" id="textosBlanco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor. Donec sit amet enim at turpis varius pellentesque ut a metus.</p>
+             <a href="servicios.html#Despedidas"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+</svg></a>
+        </div>
+        <div class="col-md-3" id="textosBlanco">
+            <img src="insumos/icono4@2x.png" alt="Restaurant_Imagen1" width="140" height="140">
+            <h3>Cumpleaños</h3>
+            <p align="center" id="textosBlanco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor. Donec sit amet enim at turpis varius pellentesque ut a metus.</p>
+             <a href="servicios.html#Cumpleaños"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+</svg></a>
+        </div>  
+       
+    </div>
+    
+</div>
+    <a name="TestimoniosI"></a>
+   <div class="secciontestimonios">       
+   <div class="row">   
+     <div class="col-md-12">    
+<div id="demo2" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    
+  </ul> 
+ <div class="carrusel2">
+<div class="carousel-inner">
+      <br><br><br>
+    <div class="carousel-item active" align="center">
+         <div class="row" >
+            <div class="col-md-2"></div>
+            <div class="col-md-2" id="textosBlanco">
+                <img src="insumos/testimonio1@2x.png" class="rounded-circle" alt="testimonio1_Imagen" width="254" height="186" >
+                <br><br><br></div>
+                <div class="col-md-1"></div>
+        <div class="col-md-6" align="left">
+            <blockquote>
+                
+                <h3 align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor. Vivamus posuere eros ullamcorper lorem facilisis, non vestibulum
+                  felis porttitor. Donec sit amet enim at turpis varius pellentesque ut a metus.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor.  <br><br> 
+                </h3>
+                
+            </blockquote>
+            <h3 align="center">~Peter F. Drucker</h3>
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="carousel-item" align="center">
+        <div class="row" >
+            <div class="col-md-2"></div>
+            <div class="col-md-2" id="textosBlanco">
+                <img src="https://media.revistagq.com/photos/6155b2a4a30b0a3e336d7d04/16:9/w_2560%2Cc_limit/GettyImages-1229892421.jpg" 
+                class="rounded-circle" alt="testimonio1_Imagen" width="254" height="186" >
+                <br><br><br></div>
+                <div class="col-md-1"></div>
+        <div class="col-md-6" align="left">
+            <blockquote>
+                
+                <h3 align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor. Vivamus posuere eros ullamcorper lorem facilisis, non vestibulum
+                  felis porttitor. Donec sit amet enim at turpis varius pellentesque ut a metus.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla fermentum sit amet dolor et dictum. Nulla volutpat condimentum nisi et 
+                  porttitor.  <br><br> 
+                </h3>
+                
+            </blockquote>
+            <h3 align="center">~Elon Musk</h3>
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+    </div>
+      
+   
+  </div>
+</div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo2" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+    
+       
+</div> <br><br> </div>  </div>       
+        
+ <footer>
+     <br><br>
+    <div class="row" align="center">
+        <div class="col-md-3">
+   <a href="index.html"> <img src="insumos/logo@2x.png" alt="logo" width="100%" height="100%" class="logo"></a>
+        </div>
+        <div class="col-md-6">
+    <div class="info" id="textosBlanco" align="left" >
+        <nav>
+            <div class="row">
+            <div class="col-md-4" ><a id="textosBlanco" href="MapaSitio.html">MAPA DEL SITIO</a></div>
+            <div class="col-md-4" ><a id="textosBlanco" href="Contacto.html">CONTÁCTANOS</a></div>
+            <div class="col-md-4" ><a id="textosBlanco" href="#">RESERVAS</a></div>
+            </div>
+        </nav>
+        <br><br><br>
+        <p>Restaurante sal y salsa Ltda</p>
+        <p>Calle 19 No. 7-30.Bogotá</p>
+        <p>reservas@salysalsa.com</p>
+        <p>312 325 25 321</p>
+        <br>
+        <p>© Copyright 2020.</p>
+    </div>
+        </div>
+     <div class="col-md-3" align="left">   
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9342643317805!2d-74.07400248705444!3d4.605791896654018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1ses-419!2sco!4v1631466195287!5m2!1ses-419!2sco" width="95%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+    </div>
+     <br><br>
+      </footer> 
+ </div>
+  
+    
+ <script src="js/jquery-3.4.1.min.js"></script>
+    
+ <script src="js/sweetalert2.min.js"></script>
+ <script src="js/casillascount.js"></script>
+ <script src="js/carrito.js"></script>
+ <script src="js/pedido.js"></script>
+
+</body>
+</html>
