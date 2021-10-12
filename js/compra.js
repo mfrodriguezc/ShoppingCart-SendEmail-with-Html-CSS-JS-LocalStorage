@@ -1,14 +1,16 @@
 const compra = new Carrito();
 const listaCompra = document.querySelector("#lista-compra tbody");
+const listaCompra2 = document.querySelector("#lista-compra2 tbody");
 const carrito = document.getElementById('carrito');
+const carrito2 = document.getElementById('carrito2');
 const procesarCompraBtn = document.getElementById('procesar-compra');
-const procesarReservaBtn = document.getElementById('procesar-reserva');
+//const procesarReservaBtn = document.getElementById('procesar-reserva');
 
 const cliente = document.getElementById('cliente');
 const correo = document.getElementById('correo');
 
-const nombre = document.getElementById('nombre');
-const email = document.getElementById('email');
+//const nombre = document.getElementById('nombre');
+//const email = document.getElementById('email');
 
 cargarEventos();
 
@@ -17,15 +19,19 @@ function cargarEventos() {
 
     //Eliminar productos del carrito
     carrito.addEventListener('click', (e) => { compra.eliminarProducto(e) });
+    carrito2.addEventListener('click', (e) => { compra.eliminarProducto(e) });
 
     compra.calcularTotal();
 
     //cuando se selecciona procesar Compra
     procesarCompraBtn.addEventListener('click', procesarCompra);
-    procesarReservaBtn.addEventListener('click', procesarReserva );
+    //procesarReservaBtn.addEventListener('click', procesarReserva );
 
     carrito.addEventListener('change', (e) => { compra.obtenerEvento(e) });
     carrito.addEventListener('keyup', (e) => { compra.obtenerEvento(e) });
+
+    carrito2.addEventListener('change', (e) => { compra.obtenerEvento(e) });
+    carrito2.addEventListener('keyup', (e) => { compra.obtenerEvento(e) });
 
 }
 
@@ -91,7 +97,7 @@ function procesarCompra() {
                 `;
         });
 
-        carrito.appendChild(textArea);
+        carrito2.appendChild(textArea);
        // document.getElementById('detalleCompra').innerHTML = cadena;
         /* --------------------------------------------------------- */
 
@@ -138,7 +144,7 @@ function procesarCompra() {
     }
 }
 
-function procesarReserva() {
+/* function procesarReserva() {
     // e.preventDefault();
    
    if (nombre.value === '' || email.value === '') {
@@ -196,4 +202,4 @@ function procesarReserva() {
             });
 
     }
-}
+} */

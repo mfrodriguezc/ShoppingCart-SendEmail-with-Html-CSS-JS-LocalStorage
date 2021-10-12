@@ -73,7 +73,7 @@
                 <h1 class="display-5" style="height: 250px; padding-top:70px;"><strong>Carrito de Compra</strong></h1>
             </section>
             <div class="row">
-                <div class="col-md-8">   
+                <div class="col-md-8" >   
                         <div id="carrito" class="form-group table-responsive" >
                             <table class="form-group table" id="lista-compra" >
                                 <thead>
@@ -96,9 +96,11 @@
                             </div>
                             <div align="center">
                             <div class="col-md-4 mb-2" >
-                                <a href="haztupedido.html"  class="btn btn-danger btn-block">Seguir comprando</a>
+                                <a href="haztupedido.html"  class="btn btn-warning btn-outline-light">Seguir comprando</a>
                             </div>
                             </div>
+                            <br>
+                            <br>
                             
                         </div>
                         <div class="col-md-4">
@@ -127,6 +129,8 @@
                                     <!-- <th scope="col"></th> -->
                                 </tr>
 
+                                
+                                
                             </table>
                             <div  align="center">
                                 <div class="col-xs-12 col-md-4">
@@ -177,7 +181,58 @@
                                                 <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
                                             </div>
                                         </div>
+                                        <!--  -->
+                                        <div id="carrito" class="form-group table-responsive" >
+                                            <table class="form-group table" id="lista-compra" >
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Imagen</th>
+                                                        <th scope="col">Nombre</th>
+                                                        <th scope="col">Precio</th>
+                                                        <th scope="col">Cantidad</th>
+                                                        <th scope="col">Sub Total</th>
+                                                        <th scope="col">Eliminar</th>
+                                                    </tr>
+                
+                                                </thead>
+                                                <tbody >
+                
+                                                </tbody>
+                                            </table>
+                
+                                            
+                                            </div>
+                                        <!-- detalles de compra -->
+                                       <!--  <div class="form-group row">
+                                            <label for="detalleCompra" class="col-12 col-md-2 col-form-label h2">Detalles:</label>
+                                            <div class="col-12 col-md-10">
+                                                <textarea name="detalleCompra" id="detalleCompra" cols="60" rows="10" ></textarea>
+                                            </div>
+                                        </div> -->
 
+                                        <div id="carrito2" class="form-group table-responsive" >
+                                            <table class="form-group table" id="lista-compra2" >
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Imagen</th>
+                                                        <th scope="col">Nombre</th>
+                                                        <th scope="col">Precio</th>
+                                                        <th scope="col">Cantidad</th>
+                                                        <th scope="col">Sub Total</th>
+                                                        <th scope="col">Eliminar</th>
+                                                    </tr>
+                
+                                                </thead>
+                                                <tbody >
+                
+                                                </tbody>
+                                            </table>
+                
+                                            
+                                            </div>
+                                        
+
+                                            
                                         <div class="row justify-content-center" id="loaders">
                                             <img id="cargando" src="insumos/cargando.gif" alt="cargando" width="220">
                                         </div>
@@ -187,8 +242,9 @@
                                                 <a href="haztupedido.html" class="btn btn-success btn-block">Seguir comprando</a>
                                             </div>
                                             <div class="col-xs-12 col-md-4">
-                                                <button type="submit" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                                                <button type="submit" class="btn btn-warning btn-outline-light" id="procesar-compra">Realizar compra</button>
                                             </div>
+                                            
                                         </div>                                       
                                     </form>
                                 </div>
